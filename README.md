@@ -1,2 +1,6 @@
 # homefood-db
-homefood dashboard
+homefood dashboard development repository'
+
+##Clone code into your own local environment
+
+git clone
