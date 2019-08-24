@@ -1,0 +1,1 @@
+[02-Aug-2019 00:09:44 Asia/Phnom_Penh] PHP Fatal error:  Call to a member function search() on a non-object in /home1/noonightcoder/public_html/milk/protected/views/report/sale_item.php on line 30

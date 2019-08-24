@@ -1,0 +1,392 @@
+2019/08/24 18:23:11 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleWeeklyByCustomer
+---
+2019/08/24 18:23:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:23:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:23:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:24:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:24:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:24:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:25:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:25:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:25:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:25:55 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:25:57 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:25:57 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:25:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:25:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:26:08 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/dashboard/view
+---
+2019/08/24 18:26:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "client/admin". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('client/admin')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/client/admin
+HTTP_REFERER=http://homefood-db.test/index.php/dashboard/view
+---
+2019/08/24 18:26:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/client/admin
+---
+2019/08/24 18:26:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/dashboard/view
+---
+2019/08/24 18:26:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleDaily
+---
+2019/08/24 18:26:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/dashboard/view
+---
+2019/08/24 18:26:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "client/admin". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('client/admin')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/client/admin
+HTTP_REFERER=http://homefood-db.test/index.php/dashboard/view
+---
+2019/08/24 18:26:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/client/admin
+---
+2019/08/24 18:26:20 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/dashboard/view
+---
+2019/08/24 18:26:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:26:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleWeeklyByCustomer
+---
+2019/08/24 18:26:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/PaymentReceiveByEmployee
+---
+2019/08/24 18:26:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/itemExpiry
+---
+2019/08/24 18:26:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/Inventory
+---
+2019/08/24 18:26:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/TopItem
+---
+2019/08/24 18:26:28 [error] [exception.CException] CException: ReportController cannot find the requested view "item_asset". in /Users/lux/framework/web/CController.php:881
+Stack trace:
+#0 /Users/lux/framework/web/CController.php(785): CController->renderPartial('item_asset', Array, true)
+#1 /Users/lux/homefood-db/protected/controllers/ReportController.php(680): CController->render('item_asset', Array)
+#2 /Users/lux/framework/web/actions/CInlineAction.php(49): ReportController->actionItemAsset()
+#3 /Users/lux/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/lux/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/lux/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/lux/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/lux/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/lux/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/lux/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/lux/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/lux/framework/web/CWebApplication.php(282): CController->run('ItemAsset')
+#12 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('report/ItemAsse...')
+#13 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#15 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#16 {main}
+REQUEST_URI=/index.php/report/ItemAsset
+HTTP_REFERER=http://homefood-db.test/index.php/report/TopItem
+---
+2019/08/24 18:26:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/ItemAsset
+---
+2019/08/24 18:26:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/TopItem
+---
+2019/08/24 18:26:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/Inventory
+---
+2019/08/24 18:26:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleItemSummary
+---
+2019/08/24 18:26:33 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleWeeklyByCustomer
+---
+2019/08/24 18:26:34 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleSumBySaleRep
+---
+2019/08/24 18:26:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ClickNotificationLog/CheckNotification". in /Users/lux/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/lux/framework/web/CWebApplication.php(141): CWebApplication->runController('ClickNotificati...')
+#1 /Users/lux/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/lux/homefood-db/index.php(13): CApplication->run()
+#3 /Users/lux/.composer/vendor/laravel/valet/server.php(158): require('/Users/lux/home...')
+#4 {main}
+REQUEST_URI=/index.php/ClickNotificationLog/CheckNotification
+HTTP_REFERER=http://homefood-db.test/index.php/report/SaleHourly
+---
