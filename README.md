@@ -12,6 +12,8 @@ git clone https://github.com/soklux/homefood-db.git
 * Control location in protected/controller/DashboardController.php
 
 ##DashboardController controller
+
+```
 public function actionView()
 {        
 	    authorized('report.dashboard');
@@ -19,6 +21,7 @@ public function actionView()
       $report=new Dashboard;
       $this->render('index',array('report'=>$report));
 }
+```
 
 * *Block of Code's Explaination*
 * $report=new Dashboard; -- reference Dashobard model
@@ -28,6 +31,8 @@ public function actionView()
 ##Dashboard model
 
 ###Dashboard model a function explain
+
+```
 public function totalSaleSPD($interval=0)
 {
     $sql = "SELECT IFNULL(SUM(sub_total),0) sale_amount
@@ -43,4 +48,6 @@ public function totalSaleSPD($interval=0)
 
     return number_format($result,Common::getDecimalPlace());
 }
+```
+
 * Sum(sub_total) from view v_sale where sale_status=sale_complete_status and return result reset to display in index.php view
