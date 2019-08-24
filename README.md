@@ -5,7 +5,9 @@ homefood dashboard development repository'
 
 git clone https://github.com/soklux/homefood-db.git
 
-[Dashboard](https://drive.google.com/file/d/1CJJIr3jFr08udAC40NWvzNR3bMvBRd3k/view?usp=sharing)
+download yii1 framework [Yii-1.1.21](https://github.com/yiisoft/yii/releases/download/1.1.21/yii-1.1.21.733ac5.zip)
+
+[Dashboard Click to See Me](https://drive.google.com/file/d/1CJJIr3jFr08udAC40NWvzNR3bMvBRd3k/view?usp=sharing)
 
 * Model located in protected/models/Dashboard.php
 * View located in protected/views/dashboard/index.php
