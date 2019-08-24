@@ -5,7 +5,8 @@ homefood dashboard development repository'
 
 git clone https://github.com/soklux/homefood-db.git
 
-download yii1 framework [Yii-1.1.21](https://github.com/yiisoft/yii/releases/download/1.1.21/yii-1.1.21.733ac5.zip)
+Download yii1 framework [Yii-1.1.21](https://github.com/yiisoft/yii/releases/download/1.1.21/yii-1.1.21.733ac5.zip)
+Extract the zip file and copy framworkfolder place outside homefood folder (your web folder stah at same folder level)
 
 [Dashboard Click to See Me](https://drive.google.com/file/d/1CJJIr3jFr08udAC40NWvzNR3bMvBRd3k/view?usp=sharing)
 
