@@ -2,7 +2,7 @@
 
 # HF Dashboard
 
-##Setup Instruction
+## Setup Instruction
 
 
 * **clone source code**
@@ -14,13 +14,14 @@ get clone https://github.com/soklux/homefood-db.git
 * **create db as db file you own**
 not posting here
 
+## Understand the dasbhoard simple MVC stucture
 
-##Controller
+### Controller
 
 * DashboardController.php in protected/controller folder
 
-##Model
+### Model
 * protected/modesl/dashboard.php
 
-##View
+### View
 * protected/views/dashboard/index.php
