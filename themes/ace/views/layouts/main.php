@@ -69,6 +69,9 @@
         cs()->registerScriptFile(baseurl().'/js/jquery.form.min.js',CClientScript::POS_END);
         cs()->registerScriptFile(baseurl().'/js/jquery-ui.min.js',CClientScript::POS_END);
         cs()->registerScriptFile(baseurl().'/js/ace.js',CClientScript::POS_BEGIN);
+        cs()->registerScriptFile(baseurl().'/js/jquery.flot.min.js',CClientScript::POS_BEGIN);
+        cs()->registerScriptFile(baseurl().'/js/jquery.flot.pie.min.js',CClientScript::POS_BEGIN);
+        cs()->registerScriptFile(baseurl().'/js/jquery.flot.resize.min.js',CClientScript::POS_BEGIN);
         cs()->registerScriptFile(baseurl().'/js/elements.fileinput.js',CClientScript::POS_BEGIN);
         cs()->registerScriptFile(baseurl().'/js/chosen.jquery.js',CClientScript::POS_BEGIN);
         cs()->registerScriptFile(baseurl().'/js/fine-upload.js',CClientScript::POS_BEGIN);

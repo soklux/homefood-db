@@ -27,7 +27,7 @@ class DashboardController extends Controller
 	{
 		return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'report', 'clientRevision'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -44,10 +44,87 @@ class DashboardController extends Controller
 	{        
 	    authorized('report.dashboard');
 
-        $report=new Dashboard;
-        $this->render('index',array('report'=>$report));
+		$report=new Dashboard;
+		$customerObj = new ClientUpdate;
+		$this->render('index',array('report'=>$report, 'customerObj'=>$customerObj));
 
 	}
+
+	/*
+	public function actionReport()
+	{        
+	    authorized('report.dashboard');
+
+		$report=new Dashboard;
+		$customerObj = new ClientUpdate;
+		$this->render('report',array('report'=>$report, 'customerObj'=>$customerObj));
+
+	}
+	*/
+	
+
+	public function actionClientRevision($filter = 1)
+    {
+        //$this->canViewReport();
+        authorized('report.dashboard');
+
+        $grid_id = 'rpt-sale-summary-grid';
+        $title = 'Client Revision';
+
+        //$data = $this->commonData($grid_id,$title);
+		$model = new ClientUpdate;
+		$data['grid_id'] = $grid_id;
+		
+		
+
+		
+		
+		
+
+		if($filter == ClientUpdate::REVISION_60DAYS_CUSTOM){
+			$data['data_provider'] = $model->getClientRevision60Days();
+			$title = $title.' - '.ClientUpdate::BUY_30_60_DAYS;
+		}
+		else if($filter == ClientUpdate::REVISION_61DAYS_CUSTOM){
+
+			$data['data_provider'] = $model->getClientRevision61Days();
+			$title = $title.' - '.ClientUpdate::BUY_60_DAY;
+		}
+		else if($filter == ClientUpdate::REVISION_91DAYS_CUSTOM){
+			$data['data_provider'] = $model->getClientRevision91Days();
+			$title = $title.' - '.ClientUpdate::NEVER_BUY;
+		}
+		else{
+			$data['data_provider'] = $model->getClientRevision30Days();
+			$filter = 1;
+			$title = $title.' - '.ClientUpdate::BUY_LAST_30_DAYS;
+		}
+
+		$data['title'] = $title;
+
+		$data['filter'] = $filter;
+
+		$data['grid_columns'] = ClientUpdate::getClientRevisionColumns();
+
+		$data['header_tab'] = ClientUpdate::getClientRevisionHeaderTab($filter);
+
+		
+
+        $this->renderView($data);
+	}
+
+	protected function renderView($data)
+    {
+        if (Yii::app()->request->isAjaxRequest && !isset($_GET['ajax']) ) {
+            Yii::app()->clientScript->scriptMap['*.css'] = false;
+            Yii::app()->clientScript->scriptMap['*.js'] = false;
+
+            $this->renderPartial('partial/_grid', $data);
+        } else {
+            $this->render('client_revision', $data);
+        }
+    }
+	
 
     public function actionAjaxRefresh()
     {

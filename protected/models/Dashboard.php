@@ -75,6 +75,8 @@ class Dashboard extends CFormModel
         return $result;
     }
 
+    
+
     public function count2dNewCust()
     {
         $sql = "SELECT count(*) nCount

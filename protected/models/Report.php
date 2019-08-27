@@ -1037,7 +1037,7 @@ class Report extends CFormModel
                     'quantity','name','category_name'
                 ),
             ),
-            'pagination' => false,
+            'pagination' => true,
         ));
 
         return $dataProvider; // Return as array object
