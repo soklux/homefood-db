@@ -69,4 +69,10 @@ public function dbAgedPurchase()
 ```
 
 ### View
-* protected/views/dashboard/index.php
+* **protected/views/dashboard/index.php**
+* protected/views/dashboard/partial/widget_agedpurchase.php
+* protected/views/dashboard/widget_chart.php
+* protected/views/dashboard/widget_topten.php
+
+Each partial view show each block of dashboard widget
+
