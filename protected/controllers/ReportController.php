@@ -57,7 +57,8 @@ class ReportController extends Controller
                     'saleOrderApproval',
                     'SaleDelivery',
                     'viewOrderHistoryDetail',
-                    'backupDB'
+                    'backupDB',
+                    'AgedCustomerPurchase'
                 ),
                 'users' => array('@'),
             ),
@@ -820,6 +821,26 @@ class ReportController extends Controller
                 'balance' => $balance,
             ), true, true),
         ));
+    }
+
+
+    public function actionAgedCustomerPurchase($filter = '1')
+    {
+        //$this->canViewReport();
+        authorized('report.stock');
+
+        $grid_id = 'rpt-aged-customer-grid';
+        $title = 'Aged Customer Purchase';
+
+        $data = $this->commonData($grid_id,$title,null,'_header_3');
+        $data['filter'] = $filter;
+
+        $data['header_tab'] = ReportColumn::getAgedCustomerPurchaseHeaderTab($filter);
+        $data['grid_columns'] = ReportColumn::getAgedCustomerPurchaseColumns();
+
+        $data['data_provider'] = $data['report']->AgedCustomerPurchase($filter);
+
+        $this->renderView($data);
     }
 
     protected function renderView($data, $view_name='index')

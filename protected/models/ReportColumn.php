@@ -2156,6 +2156,59 @@ class ReportColumn extends CModel
         return "<span class='text-warning orange' title=\"Pending for customer approval\" data-rel=\"tooltip\">" . $status . "</span>";
     }
 
+    public static function getAgedCustomerPurchaseHeaderTab($filter)
+    {
+        return array(
+            array('label' => Yii::t('app', '0-30'), 'url' => Yii::app()->urlManager->createUrl('report/agedcustomerpurchase', array(
+                'filter' => '1')), 'active' => $filter == '1' ? true : false),
+            array('label' => Yii::t('app', '31-60'), 'url' => Yii::app()->urlManager->createUrl('report/agedcustomerpurchase', array(
+                'filter' => '2')), 'active' => $filter == '2' ? true : false),
+            array('label' => Yii::t('app', '61-90'), 'url' => Yii::app()->urlManager->createUrl('report/agedcustomerpurchase', array('filter' => '3')), 'active' => $filter == '3' ? true : false),
+            array('label' => Yii::t('app', 'Older'), 'url' => Yii::app()->urlManager->createUrl('report/agedcustomerpurchase', array('filter' => '4')), 'active' => $filter == '4' ? true : false),
+        );
+    }
+
+    public static function getAgedCustomerPurchaseColumns()
+    {
+        return array(
+            array('name' => 'client_id',
+                'header' => Yii::t('app', 'Client ID'),
+                'value' => '$data["client_id"]',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+
+            array('name' => 'fullname',
+                'header' => Yii::t('app', 'Full Name'),
+                'value' => '$data["fullname"]',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+            
+            array('name' => 'first_purchase_date',
+                'header' => Yii::t('app', 'First Purchase Date'),
+                'value' => 'date("d-m-Y", strtotime($data["first_purchase_date"]))',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+            
+            array('name' => 'last_purchase_date',
+                'header' => Yii::t('app', 'Last Purchase Date'),
+                'value' => 'date("d-m-Y", strtotime($data["last_purchase_date"]))',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+            
+            array('name' => 'total',
+                'header' => Yii::t('app', 'Total'),
+                'value' => '$data["total"]',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+           
+        );
+    }
+
     public static function renderStatus($status,$status_f)
     {
         switch ($status) {

@@ -1624,6 +1624,28 @@ class Report extends CFormModel
 
     }
 
+    public function AgedCustomerPurchase($filter)
+    {
+        
+        $sql = "select client_id,'Lux' fullname,first_purchase_date,last_purchase_date,total
+                from v_client_update
+                where ord=:filter";
+
+        $rawData = Yii::app()->db->createCommand($sql)->queryAll(true, array(':filter' => $filter));
+
+        $dataProvider = new CArrayDataProvider($rawData, array(
+            'keyField' => 'client_id',
+            'sort' => array(
+                'attributes' => array(
+                    'client_id',
+                ),
+            ),
+            'pagination' => false,
+        ));
+
+        return $dataProvider; // Return as array object
+    }
+
     public function renderStatus()
     {
         return "banners";

@@ -206,8 +206,20 @@ class Dashboard extends CFormModel
             'pagination' => false,
         ));
 
-        return $dataProvider; // Return as array object
+        return $dataProvider;
     }
+
+    public function dbAgedPurchase()
+    {
+
+        $sql = "SELECT ord,aged_purchase,sum(nclient) nclient
+                FROM v_aged_customer_purchase
+                GROUP BY ord,aged_purchase
+                ORDER BY ord";
+
+        return Yii::app()->db->createCommand($sql)->queryAll(true);
+    }
+
 
 
 }

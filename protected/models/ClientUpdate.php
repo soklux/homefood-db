@@ -327,7 +327,8 @@ class ClientUpdate extends CActiveRecord
 	
 	public function getClientRevision61Days(){
 
-		$sql = "SELECT c.`first_name` fullname,  cu.*, DATEDIFF(NOW(), cu.`last_purchase_date`) number_of_days FROM `client_update` cu INNER JOIN `client` c ON cu.client_id=c.id  WHERE cu.`last_purchase_date` BETWEEN DATE_SUB(NOW(), INTERVAL 90 DAY) AND DATE_SUB(NOW(), INTERVAL 61 DAY)";
+		$sql = "SELECT c.`first_name` fullname,  cu.*, DATEDIFF(NOW(), cu.`last_purchase_date`) number_of_days 
+				FROM `client_update` cu INNER JOIN `client` c ON cu.client_id=c.id  WHERE cu.`last_purchase_date` BETWEEN DATE_SUB(NOW(), INTERVAL 90 DAY) AND DATE_SUB(NOW(), INTERVAL 61 DAY)";
         $rawData = Yii::app()->db->createCommand($sql)->queryAll();
 
 		$dataProvider = new CArrayDataProvider($rawData, array(

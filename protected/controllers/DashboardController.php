@@ -40,29 +40,6 @@ class DashboardController extends Controller
 		);
 	}
 
-	public function actionView()
-	{        
-	    authorized('report.dashboard');
-
-		$report=new Dashboard;
-		$customerObj = new ClientUpdate;
-		$this->render('index',array('report'=>$report, 'customerObj'=>$customerObj));
-
-	}
-
-	/*
-	public function actionReport()
-	{        
-	    authorized('report.dashboard');
-
-		$report=new Dashboard;
-		$customerObj = new ClientUpdate;
-		$this->render('report',array('report'=>$report, 'customerObj'=>$customerObj));
-
-	}
-	*/
-	
-
 	public function actionClientRevision($filter = 1)
     {
         //$this->canViewReport();
@@ -76,11 +53,6 @@ class DashboardController extends Controller
 		$data['grid_id'] = $grid_id;
 		
 		
-
-		
-		
-		
-
 		if($filter == ClientUpdate::REVISION_60DAYS_CUSTOM){
 			$data['data_provider'] = $model->getClientRevision60Days();
 			$title = $title.' - '.ClientUpdate::BUY_30_60_DAYS;
@@ -112,6 +84,18 @@ class DashboardController extends Controller
 
         $this->renderView($data);
 	}
+
+	public function actionView()
+	{        
+	    authorized('report.dashboard');
+
+		$report=new Dashboard;
+		$customerObj = new ClientUpdate;
+		$this->render('index',array('report'=>$report, 'customerObj'=>$customerObj));
+
+	}
+
+
 
 	protected function renderView($data)
     {
