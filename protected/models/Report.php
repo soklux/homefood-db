@@ -258,6 +258,7 @@ class Report extends CFormModel
 
         if ($this->search_id !== '') {
 
+
             $sql = "SELECT sale_id,new_id new_sale_id,sale_time,client_name,remark,0 current_balance,
                         employee_name,employee_id,client_id,quantity,sub_total,
                         discount_amount,vat_amount,total,paid,balance,status,status_f,
@@ -326,8 +327,9 @@ class Report extends CFormModel
                     ':first_name' => '%' . $this->search_id . '%',
                     ':last_name' => '%' . $this->search_id . '%',
                     ':full_name' => '%' . $this->search_id . '%',
-                    ':sale_validate_status' => param("sale_validate_status"),
-                    ':completed_customer' => param("create_customer_complete_status"))
+                    //':sale_validate_status' => param("sale_validate_status"),
+                    //':completed_customer' => param("create_customer_complete_status")
+                  )
             );
 
         } else {
@@ -366,21 +368,26 @@ class Report extends CFormModel
 
         if ($this->search_id !== '') {
 
+
             $sql = "SELECT sale_id,new_id new_sale_id,sale_time,client_name,remark,0 current_balance,
                         employee_name,employee_id,client_id,quantity,sub_total,
                         discount_amount,vat_amount,total,paid,balance,status,status_f,
                         payment_term,validate_by,approve_by,checked_at, reviewed_at, printeddo_at, printed_at
                     FROM v_sale_invoice_2
-                    WHERE (sale_id=:search_id OR (c_first_name like :first_name OR c_last_name like :last_name OR client_name like :full_name ))
+                    WHERE (
+                           sale_id=:search_id OR 
+                           (c_first_name like :first_name OR c_last_name like :last_name OR client_name like :full_name )
+                      )
                     -- and status=:sale_submit_status
                     -- and client_status=:completed_customer
                     ORDER By sale_time desc";
+
 
             $rawData = Yii::app()->db->createCommand($sql)->queryAll(true, array(
                     ':search_id' => $this->search_id,
                     ':first_name' => '%' . $this->search_id . '%',
                     ':last_name' => '%' . $this->search_id . '%',
-                    ':full_name' => '%' . $this->search_id . '%',
+                    ':full_name' => '%' . $this->search_id . '%'
                     //':sale_submit_status' => param("sale_submit_status"),
                     //':completed_customer' => param("create_customer_complete_status")
                 )
