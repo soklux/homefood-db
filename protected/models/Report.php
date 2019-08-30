@@ -496,6 +496,35 @@ class Report extends CFormModel
         return $dataProvider; // Return as array object
     }
 
+    public function allSaleInvoiceDetail($clientId)
+    {
+        $sql= "SELECT sale_id,new_id new_sale_id,sale_time,client_name,remark,0 current_balance,
+                      employee_name,employee_id,client_id,quantity,sub_total,
+                      discount_amount,vat_amount,total,paid,balance,status,status_f,
+                      payment_term,validate_by,approve_by,checked_at, reviewed_at, printeddo_at, printed_at
+                   FROM v_sale_invoice_2
+                   WHERE client_id=:client_id
+
+                   ORDER By sale_time desc";
+
+
+            $rawData = Yii::app()->db->createCommand($sql)->queryAll(true, array(
+                ':client_id' => $clientId,
+            ));
+
+        $dataProvider = new CArrayDataProvider($rawData, array(
+            'keyField' => 'sale_id',
+            'sort' => array(
+                'attributes' => array(
+                    'sale_id', 'sale_time',
+                ),
+            ),
+            'pagination' => false,
+        ));
+
+        return $dataProvider; // Return as array object
+    }
+
     public function saleInvoiceAlert()
     {
 
@@ -1627,9 +1656,9 @@ class Report extends CFormModel
     public function AgedCustomerPurchase($filter)
     {
         
-        $sql = "select client_id,'Lux' fullname,first_purchase_date,last_purchase_date,total
-                from v_client_update
-                where ord=:filter";
+        $sql = "select vc.client_id, c.first_name fullname,vc.first_purchase_date,vc.last_purchase_date,vc.total, vcpp.products
+                from v_client_update vc inner join client c on c.id=vc.client_id inner join v_client_purchase_producs vcpp ON vc.client_id=vcpp.client_id
+                where vc.ord=:filter";
 
         $rawData = Yii::app()->db->createCommand($sql)->queryAll(true, array(':filter' => $filter));
 
