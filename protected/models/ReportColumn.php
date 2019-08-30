@@ -2413,8 +2413,24 @@ class ReportColumn extends CModel
 
             array(
                 'name' => 'fullname',
-                'header' => Yii::t('app', 'Full Name'),
+                'header' => Yii::t('app', 'Customer Name'),
                 'value' => '$data["fullname"]',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+
+            array(
+                'name' => 'city_name',
+                'header' => Yii::t('app', 'Capital/Province'),
+                'value' => '$data["city_name"]',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+
+            array(
+                'name' => 'district_name',
+                'header' => Yii::t('app', 'District'),
+                'value' => '$data["district_name"]',
                 'headerHtmlOptions' => array('style' => 'text-align: right;'),
                 'htmlOptions' => array('style' => 'text-align: right;'),
             ),
@@ -2442,13 +2458,49 @@ class ReportColumn extends CModel
                 'headerHtmlOptions' => array('style' => 'text-align: right;'),
                 'htmlOptions' => array('style' => 'text-align: right;'),
             ),
+
             array(
-                'name' => 'products',
-                'header' => Yii::t('app', 'Purchased Products'),
-                'value' => '$data["products"]',
+                'name' => 'n_q_life_125',
+                'header' => Yii::t('app', 'Q-Life 125ml'),
+                'value' => 'Report::getQuanityItemPurchased($data["client_id"], 14)',
                 'headerHtmlOptions' => array('style' => 'text-align: right;'),
                 'htmlOptions' => array('style' => 'text-align: right;'),
             ),
+
+            array(
+                'name' => 'q_life_200',
+                'header' => Yii::t('app', 'Q-Life 200ml sweetened'),
+                'value' => 'Report::getQuanityItemPurchased($data["client_id"], 13)',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+
+            array(
+                'name' => 'yoku_230',
+                'header' => Yii::t('app', 'DeeDo-Yoku 230ML Grape'),
+                'value' => 'Report::getQuanityItemPurchased($data["client_id"], 2)',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+
+            array(
+                'name' => 'roza_sardine',
+                'header' => Yii::t('app', 'RoZa-Sardine in Tomato'),
+                'value' => 'Report::getQuanityItemPurchased($data["client_id"], 53)',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+
+            
+
+
+            // array(
+            //     'name' => 'products',
+            //     'header' => Yii::t('app', 'Purchased Products'),
+            //     'value' => '$data["products"]',
+            //     'headerHtmlOptions' => array('style' => 'text-align: right;'),
+            //     'htmlOptions' => array('style' => 'text-align: right;'),
+            // ),
 
         );
     }
