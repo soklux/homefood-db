@@ -51,6 +51,7 @@ class ReportController extends Controller
                     'PaymentReceiveByEmployee',
                     'ProfitByInvoice',
                     'SaleInvoiceDetail',
+                    'AllSaleInvoiceDetail',
                     'SaleWeeklyByCustomer',
                     'BalanceByCustomerId',
                     'saleOrderHistory',
@@ -249,6 +250,27 @@ class ReportController extends Controller
 
         $report->sale_id = $id;
         $data['data_provider'] = $report->saleInvoiceDetail();
+
+        $this->renderView($data);
+
+    }
+
+    public function actionAllSaleInvoiceDetail($id)
+    {
+       authorized('report.sale');
+
+        $report = new Report;
+
+        $data['report'] = $report;
+        $data['sale_id'] = $id;
+
+        $data['grid_id'] = 'rpt-sale-invoice-grid';
+        $data['title'] = Yii::t('app','Detail #') .' ' . $id  ;
+
+        $data['grid_columns'] = ReportColumn::getCustomerAllSaleInvoiceDetailColumns();
+        
+        $report->sale_id = $id;
+        $data['data_provider'] = $report->allSaleInvoiceDetail($id);
 
         $this->renderView($data);
 
