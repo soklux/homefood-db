@@ -2420,6 +2420,14 @@ class ReportColumn extends CModel
             ),
 
             array(
+                'name' => 'Mobile No',
+                'header' => Yii::t('app', 'Phone Number'),
+                'value' => '$data["mobile_no"]',
+                'headerHtmlOptions' => array('style' => 'text-align: right;'),
+                'htmlOptions' => array('style' => 'text-align: right;'),
+            ),
+
+            array(
                 'name' => 'city_name',
                 'header' => Yii::t('app', 'Capital/Province'),
                 'value' => '$data["city_name"]',
@@ -2454,7 +2462,7 @@ class ReportColumn extends CModel
             array(
                 'name' => 'total',
                 'header' => Yii::t('app', 'Total'),
-                'value' => '$data["total"]',
+                'value' => 'number_format($data["total"],Common::getDecimalPlace(), ".", ",")',
                 'headerHtmlOptions' => array('style' => 'text-align: right;'),
                 'htmlOptions' => array('style' => 'text-align: right;'),
             ),

@@ -1663,9 +1663,10 @@ class Report extends CFormModel
     public function AgedCustomerPurchase($filter)
     {
         
-        $sql = "select vc.client_id, c.first_name fullname,vc.first_purchase_date,vc.last_purchase_date,vc.total, vcpp.products, city.city_name, d.district_name
-                from v_client_update vc inner join client c on c.id=vc.client_id INNER JOIN city on c.city_id=city.id INNER JOIN district d ON c.district_id=d.id inner join v_client_purchase_producs vcpp ON vc.client_id=vcpp.client_id
-                where vc.ord=:filter";
+        $sql = "SELECT vc.client_id, c.first_name fullname,c.mobile_no,vc.first_purchase_date,vc.last_purchase_date,
+                  vc.total, vcpp.products, city.city_name, d.district_name
+                FROM v_client_update vc INNER JOIN client c on c.id=vc.client_id INNER JOIN city on c.city_id=city.id INNER JOIN district d ON c.district_id=d.id INNER JOIN v_client_purchase_producs vcpp ON vc.client_id=vcpp.client_id
+                WHERE vc.ord=:filter";
 
         $rawData = Yii::app()->db->createCommand($sql)->queryAll(true, array(':filter' => $filter));
 
